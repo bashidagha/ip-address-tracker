@@ -1,0 +1,72 @@
+html,body{
+    font-size: 62.5%;
+}
+
+*{
+    font-family: 'Rubik', sans-serif;
+}
+
+.location-top-panel{
+    width: 100%;
+    background-image: url(../assets/pattern-bg.png);
+    background-repeat: no-repeat;
+    padding-top: 2rem;
+
+    h1{
+        font-weight: 700;
+        text-align: center;
+        font-size: 3rem;
+        color: white;
+    }
+}
+
+.location-top-panel-search-box{
+    width: 45rem;
+    height: 5rem;
+    display: flex;
+    margin:3rem auto;
+
+
+    div{
+        width: 5rem;
+        height: 5rem;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-top-right-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+    }
+
+    input{
+        height: 5rem;
+        width: 100%;
+        font-size: 1.8rem;
+        padding-left: 2rem;
+        border: none;
+        border-top-left-radius: 1rem;
+        border-bottom-left-radius: 1rem;
+
+        &:focus-visible{
+            outline: none;
+        }
+    }
+
+}
+
+
+.location-top-panel-loc{
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    border-radius: 1rem;
+}
+
+.location-top-panel-loc-item{
+
+    h4{
+        padding: 2rem;
+        color: $DarkGray;
+    }
+
+}

@@ -1,24 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import Arrow from './assets/icon-arrow.svg'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className='location-top-panel'>
+        <h1>IP Address Tracker</h1>
+
+        <div className='location-top-panel-search-box'>
+          <input placeholder="Search for any IP address or domain"></input>
+          <div>
+            <img src={Arrow} alt="arrow"></img>
+          </div>
+          
+        </div>
+
+        <div className='location-top-panel-loc col-md-10'>
+          <div className='row'>
+            <div className='col-md-3 location-top-panel-loc-item'>
+              <h4> IP Address</h4>
+            </div>
+            <div className='col-md-3 location-top-panel-loc-item'>
+              <h4> Location</h4>
+            </div>
+            <div className='col-md-3 location-top-panel-loc-item'>
+              <h4> Timezone</h4>
+            </div>
+            <div className='col-md-3 location-top-panel-loc-item'>
+              <h4> ISP</h4>
+            </div>
+          </div>
+          
+        </div>
+
+      </div>  
+    </>
   );
 }
 
