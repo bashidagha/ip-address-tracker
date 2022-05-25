@@ -1,4 +1,5 @@
 import Arrow from './assets/icon-arrow.svg'
+import {API_KEY} from './key'
 
 function App() {
   return (
@@ -9,7 +10,7 @@ function App() {
         <div className='location-top-panel-search-box'>
           <input placeholder="Search for any IP address or domain"></input>
           <div>
-            <img src={Arrow} alt="arrow"></img>
+            <img src={Arrow} alt="arrow" onClick={()=>console.log(API_KEY)}></img>
           </div>
           
         </div>
